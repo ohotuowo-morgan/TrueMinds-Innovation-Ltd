@@ -295,8 +295,6 @@ nav a {
 
 .search-cards {
     padding: 2rem 8rem 2rem;
-    /* padding-top: 2rem; */
-    /* padding-bottom: 2rem; */
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 30px;
@@ -449,7 +447,11 @@ footer p {
     }
 
     .search-cards{
-        padding: 2rem;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .scard{
