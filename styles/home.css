@@ -451,7 +451,6 @@ footer p {
     }
 
     .search-cards{
-        display: none;
         padding: 2rem 0;
         /* display: flex; */
         flex-direction: column;
