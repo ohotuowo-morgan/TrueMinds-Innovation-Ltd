@@ -379,16 +379,19 @@ footer p {
         padding-left: 1rem;
     }
 
+
     /* main{
         max-width: 400px;
     } */
+
+
     .hero img{
-        width: 400px;
-        height: auto;
+        max-width: 440px;
+        height: 390px;
     }
 
     .overlay{
-        top: 120px;
+        top: 170px;
         left: 42px;
     }
 
@@ -397,6 +400,7 @@ footer p {
         justify-content: center;
         align-items: center;
         width: 160px;
+        height: 20px;
         font-size: 16px;
         padding: 0;
         padding: .2rem 0;
@@ -447,8 +451,9 @@ footer p {
     }
 
     .search-cards{
+        display: none;
         padding: 2rem 0;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
