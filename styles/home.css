@@ -392,6 +392,9 @@ footer p {
         max-width: 400px;
     } */
 
+    .hero{
+        height: 390px;
+    }
 
     .hero .heroimg{
         max-width: 700px;
