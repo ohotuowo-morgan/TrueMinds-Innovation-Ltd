@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers - TrueMind Innovations Ltd</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -22,14 +24,16 @@
             <p>TrueMinds <span>Innovation</span></p>
         </a>
 
-        <nav class="navigation">
+        <button id="hamburger" class="hamburger " aria-label="Open the menu"><span></span></button>
+
+        <nav class="navigation" id="navigation">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Projects</a>
             <a href="#">Training</a>
             <a href="#">Contact</a>
-            <a id="theme"><img src="images/sun.svg" alt="the"></a>
+            <a id="theme"><img id="themeimg" src="images/sun.svg" alt="theme"></a>
             <a href="#" id="active">Career</a>
         </nav>
     </header>
@@ -40,8 +44,8 @@
 
             <div class="overlay">
                 <div class="top-overlay">
-                    <span>
-                        <img src="images/whitebag.svg" alt="briefcase" />
+                    <span class="topbtn">
+                        <img id="spanimg" src="images/whitebag.svg" alt="briefcase" />
                         <p>Join Our Team</p>
                     </span>
                 </div>
