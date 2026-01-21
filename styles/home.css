@@ -451,9 +451,13 @@ nav a {
 
 .picktxt.display::after {
     content: "Close Application Form";
-    font-size: 1rem;   
+    font-size: 12px;   
     display: block;    
-    color: #fafafa;       
+    color: #fafafa; 
+}
+
+body.light-mode .picktxt.display::after {
+    color: #1f1f1f;
 }
 
 .picktxt.display + img {
@@ -768,7 +772,7 @@ body.light-mode .finfo {
     border: 1px solid #06ac5c; 
 }
 body.light-mode .text-content h3,
-body.light-mode .text-content p {
+body.light-mode .text-content p{
     color: #1f1f1f;
 }
 
