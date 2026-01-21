@@ -2,7 +2,7 @@ const hamburger = document.querySelector("#hamburger");
 const navi = document.querySelector("#navigation");
 const theme = document.getElementById("theme");
 const topBar = document.querySelector(".top");
-
+const frmbtn = document.querySelector(".pick");
 
 
 hamburger.addEventListener("click", () => {
@@ -23,6 +23,7 @@ theme.addEventListener("click", () => {
     document.querySelector("footer").classList.toggle("light-mode");
     // document.querySelector("h2").classList.toggle("light-mode");
     document.querySelector("footer").classList.toggle("light-footer");
+    // document.querySelector("form").classList.toggle("light-mode");
 
     if (document.body.classList.contains("light-mode")) {
         document.getElementById("themeimg").setAttribute("src", "images/moon.svg");
@@ -32,6 +33,11 @@ theme.addEventListener("click", () => {
         document.getElementById("spanimg").setAttribute("src", "images/whitebag.svg");
     }
 
+});
+
+frmbtn.addEventListener("click", ()=>{
+    document.querySelector(".picktxt").classList.toggle("display");
+    document.querySelector(".sixth").classList.toggle("show");
 });
 
 
