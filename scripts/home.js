@@ -5,6 +5,56 @@ const topBar = document.querySelector(".top");
 const frmbtn = document.querySelector(".pick");
 
 
+// Navigation Selectors
+const home = document.getElementById("home");
+const about = document.getElementById("about");
+const services = document.getElementById("services");
+const projects = document.getElementById("projects");
+const training = document.getElementById("training");
+const contact = document.getElementById("contact");
+
+// Scrollable section
+const hero = document.querySelector(".hero");
+const first = document.querySelector(".second-container");
+const second = document.querySelector(".third-container");
+const third = document.querySelector(".fcard-container");
+const fourth = document.querySelector(".fifth");
+const fifth = document.querySelector(".footer");
+
+const scrollToSection = (section) => {
+    section.scrollIntoView({behavior: "smooth"});
+}
+
+home.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    scrollToSection(hero);
+});
+
+about.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    scrollToSection(first);
+});
+
+services.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(second);
+});
+
+projects.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(third);
+});
+
+training.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(fourth);
+});
+
+contact.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(fifth);
+});
+
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navi.classList.toggle("active");
